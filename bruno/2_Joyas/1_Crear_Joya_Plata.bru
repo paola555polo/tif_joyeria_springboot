@@ -1,0 +1,26 @@
+meta {
+  name: 1_Crear_Joya_Plata
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/joyas
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Anillo Solitario de Plata 925",
+    "descripcion": "Anillo de plata de ley 925 con circona cúbica engarzada",
+    "material": "Plata 925",
+    "categoria": "Anillo",
+    "precio": 25000.0,
+    "stock": 10
+  }
+}

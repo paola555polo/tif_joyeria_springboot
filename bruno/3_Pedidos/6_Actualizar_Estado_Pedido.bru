@@ -1,0 +1,21 @@
+meta {
+  name: 6_Actualizar_Estado_Pedido
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/api/pedidos/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "estado": "PAGADO"
+  }
+}

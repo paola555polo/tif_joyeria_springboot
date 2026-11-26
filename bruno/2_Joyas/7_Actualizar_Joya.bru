@@ -1,0 +1,26 @@
+meta {
+  name: 7_Actualizar_Joya
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8080/api/joyas/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Anillo Solitario de Plata 925 Premium",
+    "descripcion": "Anillo de plata de ley 925 rodinada con circona brillante",
+    "material": "Plata 925",
+    "categoria": "Anillo",
+    "precio": 32000.0,
+    "stock": 12
+  }
+}

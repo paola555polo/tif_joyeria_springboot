@@ -1,0 +1,25 @@
+meta {
+  name: 4_Actualizar_Cliente
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/api/clientes/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Valentina Maria",
+    "apellido": "Rossi",
+    "email": "valentina.rossi@example.com",
+    "telefono": "+54 11 9988-7766",
+    "direccion": "Av. Quintana 450, Recoleta, CABA"
+  }
+}

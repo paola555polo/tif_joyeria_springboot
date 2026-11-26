@@ -1,0 +1,26 @@
+meta {
+  name: 2_Crear_Joya_Oro_Valida
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/joyas
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Collar Gargantilla en Oro 18k",
+    "descripcion": "Gargantilla de eslabones italianos en oro amarillo de 18 kilates",
+    "material": "Oro 18k",
+    "categoria": "Collar",
+    "precio": 280000.0,
+    "stock": 5
+  }
+}

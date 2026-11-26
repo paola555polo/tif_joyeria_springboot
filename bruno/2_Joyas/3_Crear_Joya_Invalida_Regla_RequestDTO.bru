@@ -1,0 +1,26 @@
+meta {
+  name: 3_Crear_Joya_Invalida_Regla_RequestDTO
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/joyas
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Anillo de Oro Barato Invalido",
+    "descripcion": "Intento de registrar una pieza de oro a un precio irrisorio",
+    "material": "Oro 18k",
+    "categoria": "Anillo",
+    "precio": 5000.0,
+    "stock": 2
+  }
+}

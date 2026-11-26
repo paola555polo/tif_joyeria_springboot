@@ -1,0 +1,28 @@
+meta {
+  name: 2_Crear_Pedido_Invalido_Regla_Service
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/pedidos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "clienteId": 1,
+    "estado": "PENDIENTE",
+    "detalles": [
+      {
+        "joyaId": 3,
+        "cantidad": 1
+      }
+    ]
+  }
+}
